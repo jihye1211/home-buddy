@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+
+  /* Soft, native-feeling tokens. Glassmorphism over a translucent surface. */
+  --bd-radius: 16px;
+  --bd-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html,
+body {
+  margin: 0;
+}
+
+/*
+ * The window is transparent and auto-sizes to this element's height (see
+ * useAutoResize), so #root must size to its content, not the viewport. Width is
+ * fixed to match the window width.
+ */
+#root {
+  width: 300px;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  /* Transparent so the native vibrancy / rounded window shows through. */
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  user-select: none;
+  cursor: default;
+  overflow: hidden;
+}
+
+/*
+ * The frosted card that fills the popover window. The window itself is
+ * transparent (for rounded corners), so this surface stays nearly opaque:
+ * WebKit's backdrop-filter can intermittently fail to composite on a
+ * transparent window, and at ~0.98 alpha that glitch is imperceptible instead
+ * of showing the desktop straight through.
+ */
+.glass-surface {
+  background: rgba(248, 248, 250, 0.98);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border: 0.5px solid rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .glass-surface {
+    background: rgba(28, 28, 30, 0.98);
+    border-color: rgba(255, 255, 255, 0.09);
+  }
+}
+
+/* Tabular figures keep the countdown from jittering as digits change. */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

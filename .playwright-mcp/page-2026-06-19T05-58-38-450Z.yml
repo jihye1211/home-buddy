@@ -1,0 +1,31 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic "afternoon 🐰" [ref=e5]:
+      - generic [ref=e6]: 🐰
+      - generic [ref=e7]: ☕
+    - paragraph [ref=e8]: 오후도 힘내요!
+  - generic [ref=e10]:
+    - generic [ref=e11] [cursor=pointer]:
+      - generic [ref=e12]: 출근
+      - textbox "오늘 출근 시간 보정" [ref=e13]: 09:30
+    - generic [ref=e14]:
+      - generic [ref=e15]: 퇴근
+      - generic [ref=e16]: 18:30
+  - generic [ref=e17]:
+    - button "출근일시 확인하기" [ref=e18] [cursor=pointer]:
+      - text: 출근일시 확인하기
+      - img [ref=e19]
+    - generic [ref=e23]:
+      - img [ref=e24]
+      - generic: 출근일시를 확인하여 입력해주세요.
+  - generic [ref=e28]:
+    - progressbar [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]: 오늘의 노동
+      - generic [ref=e33]: 61%
+  - generic [ref=e35]:
+    - generic [ref=e36]: 퇴근까지
+    - generic [ref=e37]: 03:31:21
+  - contentinfo [ref=e38]:
+    - button "설정" [ref=e39] [cursor=pointer]:
+      - img [ref=e40]

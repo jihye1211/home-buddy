@@ -1,0 +1,32 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic "overtime 🐰" [ref=e5]:
+      - generic [ref=e6]: 🐰
+      - generic [ref=e7]: 😵
+    - paragraph [ref=e8]: 야근 중...
+  - generic [ref=e10]:
+    - generic [ref=e11] [cursor=pointer]:
+      - generic [ref=e12]: 출근
+      - generic [ref=e13]: 09:30
+      - textbox "오늘 출근 시간 보정" [ref=e14]: 09:30
+    - generic [ref=e15]:
+      - generic [ref=e16]: 퇴근
+      - generic [ref=e17]: 15:01
+  - generic [ref=e18]:
+    - button "출근일시 확인하기" [ref=e19] [cursor=pointer]:
+      - text: 출근일시 확인하기
+      - img [ref=e20]
+    - generic [ref=e24]:
+      - img [ref=e25]
+      - generic: 출근일시를 확인하여 입력해주세요.
+  - generic [ref=e29]:
+    - progressbar [ref=e30]
+    - generic [ref=e32]:
+      - generic [ref=e33]: 오늘의 노동
+      - generic [ref=e34]: 100%
+  - generic [ref=e36]:
+    - generic [ref=e37]: 초과근무
+    - generic [ref=e38]: +00:01:48
+  - contentinfo [ref=e39]:
+    - button "설정" [ref=e40] [cursor=pointer]:
+      - img [ref=e41]

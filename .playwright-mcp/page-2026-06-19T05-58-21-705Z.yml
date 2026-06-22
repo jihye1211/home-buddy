@@ -1,0 +1,44 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]: 🐰 👋
+    - heading "안녕하세요" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 오늘부터 함께 퇴근할게요. 평소 출퇴근 시간을 알려주세요.
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]: 출근 시간
+      - textbox "출근 시간" [ref=e11]: 09:30
+    - generic [ref=e12]:
+      - button "근무 시간으로" [ref=e13] [cursor=pointer]
+      - button "퇴근 시간 지정" [ref=e14] [cursor=pointer]
+    - generic [ref=e15]:
+      - generic [ref=e16]: 근무 시간 (시간)
+      - spinbutton "근무 시간 (시간)" [ref=e17]: "9"
+  - generic [ref=e18]:
+    - generic [ref=e19]: 근태 확인 URL (선택)
+    - generic [ref=e20]:
+      - textbox "근태 확인 URL (선택) URL 열기 출근일시를 확인하는 페이지 주소. 이 기기에만 저장돼요." [ref=e21]:
+        - /placeholder: https://
+      - button "URL 열기" [disabled] [ref=e22]:
+        - img [ref=e23]
+    - generic [ref=e27]: 출근일시를 확인하는 페이지 주소. 이 기기에만 저장돼요.
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e30]: 나의 퇴근 도우미
+      - textbox "이모지 직접 입력" [ref=e31]:
+        - /placeholder: 직접
+    - generic [ref=e32]:
+      - button "🐰" [pressed] [ref=e33] [cursor=pointer]
+      - button "🐯" [ref=e34] [cursor=pointer]
+      - button "🐻" [ref=e35] [cursor=pointer]
+      - button "🐱" [ref=e36] [cursor=pointer]
+      - button "🦊" [ref=e37] [cursor=pointer]
+      - button "🐶" [ref=e38] [cursor=pointer]
+      - button "🐼" [ref=e39] [cursor=pointer]
+      - button "🐧" [ref=e40] [cursor=pointer]
+      - button "🐸" [ref=e41] [cursor=pointer]
+      - button "🦦" [ref=e42] [cursor=pointer]
+      - button "🦥" [ref=e43] [cursor=pointer]
+      - button "☕" [ref=e44] [cursor=pointer]
+      - button "🌙" [ref=e45] [cursor=pointer]
+      - button "✨" [ref=e46] [cursor=pointer]
+  - button "다음 →" [ref=e47] [cursor=pointer]
