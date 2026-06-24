@@ -27,7 +27,7 @@ export function formatTrayTitle(
 ): string {
   const overtimeMs = status.isOvertime ? -status.remainingMs : 0;
   const emoji = tray.showEmoji
-    ? trayEmojiForPhase(status.phase, overtimeMs)
+    ? trayEmojiForPhase(status.phase, character, overtimeMs)
     : "";
 
   const segments: string[] = [];

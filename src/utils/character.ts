@@ -54,11 +54,19 @@ export function faceForPhase(phase: DayPhase, overtimeMs = 0): string {
   return OVERTIME_FACES[stage];
 }
 
-/** The standalone tray emoji (no expression) for a phase. */
-export function trayEmojiForPhase(phase: DayPhase, overtimeMs = 0): string {
+/**
+ * The standalone tray emoji for a phase. Normal phases show the user's chosen
+ * buddy so the menu bar matches the popover; overtime/done keep their status
+ * emoji so the menu bar still signals those moments at a glance.
+ */
+export function trayEmojiForPhase(
+  phase: DayPhase,
+  character: string = DEFAULT_CHARACTER,
+  overtimeMs = 0,
+): string {
   if (phase === "overtime") {
     return overtimeMs >= OVERTIME_STAGE_MINUTES * 60_000 ? "🫠" : "🔥";
   }
   if (phase === "done") return "🎉";
-  return "🐰";
+  return character;
 }

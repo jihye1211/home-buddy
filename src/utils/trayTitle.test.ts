@@ -37,6 +37,10 @@ describe("formatTrayTitle", () => {
     expect(formatTrayTitle(status(), "🐰", baseTray)).toBe("🐰 2h 13m");
   });
 
+  test("uses the chosen character as the menu bar emoji", () => {
+    expect(formatTrayTitle(status(), "🦊", baseTray)).toBe("🦊 2h 13m");
+  });
+
   test("hides the emoji when disabled", () => {
     expect(formatTrayTitle(status(), "🐰", { ...baseTray, showEmoji: false })).toBe(
       "2h 13m",
